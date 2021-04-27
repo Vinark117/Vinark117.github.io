@@ -12,13 +12,21 @@ body {
     grid-template-columns: 1fr;
 }
 
+/* Banner */
+
+.banner {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
 /* Navigation bar */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     height: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 10px;
