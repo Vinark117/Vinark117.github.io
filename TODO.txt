@@ -1,0 +1,8 @@
+Website main pages:
+    - Home page
+        - Introduction
+        - Projects I'm proud of
+        - Social media
+    - Games
+    - Tools
+    - Videos
