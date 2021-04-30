@@ -4,6 +4,8 @@ body {
     background-color: #272736;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #FFFFEB;
 }
 
@@ -15,9 +17,13 @@ body {
 /* Banner */
 
 .banner {
+    background-size: 100%;
+    image-rendering: pixelated;
+}
+
+.banner img {
     width: 100%;
     height: auto;
-    image-rendering: pixelated;
 }
 
 /* Navigation bar */
@@ -29,11 +35,11 @@ body {
     margin-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #FFFFEB;
 }
 
-.nav-wrapper > .left-side > div {
+.nav-wrapper > .nav-left-side > div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -43,7 +49,7 @@ body {
     font-weight: bold;
 }
 
-.nav-wrapper > .right-side > div {
+.nav-wrapper > .nav-right-side > div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -54,7 +60,7 @@ body {
     color: #43434F;
 }
 
-.left-side {
+.nav-left-side {
     display: flex;
 }
 
@@ -84,4 +90,87 @@ body {
 
 .active-nav-link a {
     color: #43434F !important;
+}
+
+/* Game cards */
+
+.grid-four-column {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+}
+
+.grid-element {
+    width: 100%;
+}
+
+.game-card-grid-header {
+    margin: auto;
+    width: 320px;
+}
+
+.game-card-background {
+    vertical-align: top;
+    margin: auto;
+    width: 280px;
+    height: auto;
+    background-color: #43434F;
+    border: 20px solid #43434F;
+    border-radius: 20px;
+}
+
+.game-card-background a {
+    text-decoration: none;
+    color: #FFFFEB;
+}
+
+.game-card-cover-image {
+
+    width: 280px;
+    height: 223px;
+    margin-bottom: 7px;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.game-card-cover-image img {
+    height: 100%;
+}
+
+.game-card-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.game-card-link {
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.game-card-link img {
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.game-card-link text {
+    margin: auto;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: center;
+
+    padding-bottom: 2px;
 }
