@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
+    <body class="preload">
         <div class="container">
             
             <div class="banner"><img src="images/VinarkGamesBanner.png"></div>
@@ -37,15 +37,9 @@
                 </div>
             </div>
 
-            <div class="grid-four-column">
-                <div class="grid-element">
-                    <div class="game-card-grid-header">
-                        <h1>Games</h1>
-                    </div>
-                </div>
-            </div>
+                <h1>Games</h1>
             
-            <div class="grid-four-column">
+            <div class="flexible-gird">
 
                 <div class="grid-element">
                     <div class="game-card-background">
@@ -141,7 +135,69 @@
                     </div>
                 </div>
 
+                <div class="grid-element">
+                    <div class="game-card-background">
+                        <a href="https://vinarkgames.itch.io/thedeathcontract">
+                            <div class="game-card-cover-image"><img src="images/GameCovers/TheDeathContract.png"/></div>
+                        </a>
+                        <div class="game-card-title">The Death Contract</div>
+
+                        <a href="https://vinarkgames.itch.io/thedeathcontract/purchase">
+                            <div class="game-card-link" style="background-color: #EB564B">
+                                <img src="images/Icons/itchio.svg"/>
+                                <text>Download on Itch.io</text>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-element">
+                    <div class="game-card-background">
+                        <a href="https://vinarkgames.itch.io/polf">
+                            <div class="game-card-cover-image"><img src="images/GameCovers/Polf.png"/></div>
+                        </a>
+                        <div class="game-card-title">Polf</div>
+
+                        <a href="https://vinarkgames.itch.io/polf/purchase">
+                            <div class="game-card-link" style="background-color: #EB564B">
+                                <img src="images/Icons/itchio.svg"/>
+                                <text>Download on Itch.io</text>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-element">
+                    <div class="game-card-background">
+                        <a href="https://vinarkgames.itch.io/unstoppable">
+                            <div class="game-card-cover-image"><img src="images/GameCovers/Unstoppable.png"/></div>
+                        </a>
+
+                        <div class="game-card-title">Unstoppable</div>
+
+                        <a href="https://vinarkgames.itch.io/unstoppable/purchase">
+                            <div class="game-card-link" style="background-color: #EB564B">
+                                <img src="images/Icons/itchio.svg"/>
+                                <text>Download on Itch.io</text>
+                            </div>
+                        </a>
+
+                        <a href="https://itch.io/embed-upload/2472320?color=ffffff">
+                            <div class="game-card-link" style="background-color: #3CA370">
+                                <img src="images/Icons/earth.svg"/>
+                                <text>Play in the Browser</text>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
 </html>
+
+<script>
+    window.onload = function() {
+        document.querySelector("body").classList.remove("preload");
+    };
+</script>
